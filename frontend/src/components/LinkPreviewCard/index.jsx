@@ -7,8 +7,8 @@ import './linkpreviewcard.css';
 
 const LinkPreviewCard = ({ meta, loading, link, error }) => {
 
-    if (error) return <h3>{error}</h3>
-    console.log({ loading });
+    if (error) return <h3 style={{ height: '180px', position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>{error}</h3>
+    if (meta === null && loading === false) return <h3 style={{ height: '180px', position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>Meta is not available, '🤓'</h3>
 
     return (
         <div className='card_wrapper_d3' style={{ height: `${loading === true ? '200px' : '40%'}`, position: 'relative' }}>
