@@ -6,4 +6,4 @@ const api = axios.create({
     baseURL,
 });
 
-export const fetchMeta = (url) => api.get(`/api/meta?url=${url}`);
+export const fetchMeta = (url) => api.get(`api/meta?url=${url}`);

@@ -3,7 +3,8 @@ import { useForm } from '@mantine/form';
 import { TextInput, Text, Paper, Button, Divider, Stack, Center, LoadingOverlay } from '@mantine/core';
 
 
-const FormData = () => {
+
+const FormData = ({setLink , findMeta}) => {
 
     const [visible, setVisible] = useState(false);
 
@@ -30,7 +31,7 @@ const FormData = () => {
 
                 <Divider label="Happy Coding 🙃" labelPosition="center" my="lg" size="md" />
 
-                <form onSubmit={form.onSubmit(() => console.log(form.values))}>
+                <form onSubmit={form.onSubmit(() => findMeta(form.values.url))}>
                     <Stack>
 
                         <TextInput

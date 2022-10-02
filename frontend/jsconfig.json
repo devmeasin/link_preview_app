@@ -7,7 +7,7 @@
             "pages/*": ["/pages/*"],
             "static/*": ["/public/static/*"],
             "components/*": ["/components/*"],
-            "services/*": ["/services/*"],
+            "api/*": ["/api/*"],
         },
     }
 }
