@@ -7,7 +7,7 @@ const errorHandler = require('./src/handler/errorHandler');
 
 app.use(cors());
 app.use(express.static(path.join('frontend-build')));
-app.listen(5000, () => console.log('listening on port ' + 5000));
+app.listen(5050, () => console.log('listening on port ' + 5050));
 
 app.get('/', (req, res) => res.send(`<h1>Hello World!</h1>`));
 app.get('/api/meta', metaHandler);
