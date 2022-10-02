@@ -1,0 +1,16 @@
+.card_wrapper_d3 {
+    overflow: hidden;
+}
+
+.image_wrapper {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image_wrapper span img{
+    object-fit: cover !important;
+    height: 100%;
+}
