@@ -71,11 +71,11 @@ export const Navbar = () => {
                         <Title order={4} style={{ width: "100px", marginLeft: "4px" }}> Vite JS</Title>
                     </div>
                     <Group className={classes.links}>
-                        <Link to="/">
+                        <a href='https://github.com/easinwebpro/link_preview_app' target='_blank'>
                             <Avatar color="blue" radius="xl">
                                 <IconBrandGithub size={24} />
                             </Avatar>
-                        </Link>
+                        </a>
                     </Group>
 
                     <Burger opened={opened} onClick={toggle} className={classes.burger} size="sm" />
@@ -84,11 +84,11 @@ export const Navbar = () => {
                         {(styles) => (
                             <Paper className={classes.dropdown} withBorder style={styles}>
                                 <Center>
-                                    <Link to="/">
+                                    <a href='https://github.com/easinwebpro/link_preview_app' target='_blank'>
                                         <Avatar color="blue" radius="xl">
                                             <IconBrandGithub size={24} />
                                         </Avatar>
-                                    </Link>
+                                    </a>
                                 </Center>
                             </Paper>
                         )}
